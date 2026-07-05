@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Club Registration Form</title>
+
+    <style>
+        body{
+            background-color:#d9f2ff;
+            font-family:Arial, sans-serif;
+        }
+
+        .container{
+            width:700px;
+            margin:auto;
+            background-color:white;
+            padding:20px;
+            border:2px solid navy;
+            border-radius:10px;
+        }
+
+        h1{
+            color:darkblue;
+            text-align:center;
+        }
+
+        h2{
+            color:green;
+            text-align:center;
+            font-size:22px;
+        }
+
+        table{
+            width:100%;
+        }
+
+        td{
+            padding:8px;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=password],
+        input[type=tel],
+        input[type=date],
+        select,
+        textarea{
+            width:100%;
+            padding:6px;
+        }
+
+        .buttons{
+            text-align:center;
+        }
+
+        input[type=submit],
+        input[type=reset]{
+            padding:10px 20px;
+            margin:10px;
+            background-color:darkblue;
+            color:white;
+            border:none;
+            border-radius:5px;
+        }
+
+        input[type=submit]:hover,
+        input[type=reset]:hover{
+            background-color:green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Sri Chandrasekharendra Saraswathi Viswa Mahavidyalaya</h2>
+
+<h1>College Club Registration Form</h1>
+
+<hr>
+
+<form>
+
+<table>
+
+<tr>
+<td><label><b>Student Name</b></label></td>
+<td><input type="text" placeholder="Enter your full name" required></td>
+</tr>
+
+<tr>
+<td><label><b>Register Number</b></label></td>
+<td><input type="text" placeholder="Enter Register Number" required></td>
+</tr>
+
+<tr>
+<td><label><b>Email ID</b></label></td>
+<td><input type="email" placeholder="Enter College Email" required></td>
+</tr>
+
+<tr>
+<td><label><b>Password</b></label></td>
+<td><input type="password" placeholder="Create Password" required></td>
+</tr>
+
+<tr>
+<td><label><b>Department</b></label></td>
+<td>
+<select>
+<option>Select Department</option>
+<option>Computer Science</option>
+<option>Information Technology</option>
+<option>Artificial Intelligence</option>
+<option>Electronics</option>
+<option>Mechanical</option>
+<option>Civil</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><label><b>Year of Study</b></label></td>
+<td>
+<input type="radio" name="year"> I Year
+<input type="radio" name="year"> II Year
+<input type="radio" name="year"> III Year
+<input type="radio" name="year"> IV Year
+</td>
+</tr>
+
+<tr>
+<td valign="top"><label><b>Interested Club</b></label></td>
+<td>
+<input type="checkbox"> Coding Club<br>
+<input type="checkbox"> Robotics Club<br>
+<input type="checkbox"> Environment Club<br>
+<input type="checkbox"> Art Club<br>
+<input type="checkbox"> Cultural Club<br>
+<input type="checkbox"> Automation Club<br>
+<input type="checkbox"> Music Club<br>
+<input type="checkbox"> Sports Club
+</td>
+</tr>
+
+<tr>
+    <td><label><b>Date of Birth</b></label></td>
+    <td>
+        <input type="text" placeholder="DD/MM/YYYY" pattern="\d{2}/\d{2}/\d{4}" required>
+    </td>
+</tr>
+
+<tr>
+<td><label><b>Upload Student ID</b></label></td>
+<td><input type="file"></td>
+</tr>
+
+<tr>
+<td valign="top"><label><b>Reason for Joining</b></label></td>
+<td>
+<textarea rows="5" placeholder="Write your reason here..."></textarea>
+</td>
+</tr>
+
+<tr>
+<td><label><b>Phone Number</b></label></td>
+<td><input type="tel" placeholder="Enter Mobile Number"></td>
+</tr>
+
+<tr>
+<td colspan="2">
+<input type="checkbox" required>
+I confirm that the above information is correct.
+</td>
+</tr>
+
+<tr>
+<td colspan="2" class="buttons">
+<input type="submit" value="Register">
+<input type="reset" value="Clear Form">
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</div>
+
+</body>
+</html>
