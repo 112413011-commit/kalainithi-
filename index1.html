@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#d9f2ff;
+        }
+
+        .container{
+            width:400px;
+            margin:50px auto;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        h2{
+            text-align:center;
+            color:blue;
+        }
+
+        input,select{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            margin-bottom:15px;
+        }
+
+        input[type=submit]{
+            background:green;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+
+        input[type=submit]:hover{
+            background:darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Student Registration Form</h2>
+
+<form action="process.php" method="post">
+
+Name
+<input type="text" name="name" required>
+
+Age
+<input type="number" name="age" required>
+
+Department
+<input type="text" name="department" required>
+
+Email
+<input type="email" name="email" required>
+
+<input type="submit" value="Submit">
+
+</form>
+
+</div>
+
+</body>
+</html>
